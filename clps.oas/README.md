@@ -1,0 +1,1 @@
+这是一个基于Spring+SpringMVC+MyBatis的互联网公司人事管理平台的代码。
