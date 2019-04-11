@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="clps.oas:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="clps.oas.war">
+      <element id="artifact" artifact-name="clps.oas:war exploded" />
+    </root>
+  </artifact>
+</component>

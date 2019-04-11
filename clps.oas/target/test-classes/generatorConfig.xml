@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+  	<!-- auto generator comment -->
+  	<commentGenerator>
+  		<property name="suppressAllComments" value="true"/>
+  	</commentGenerator>
+  	<!-- db connection -->
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/oas" 
+    	driverClass="com.mysql.jdbc.Driver" 
+    	password="ztczuishuai" 
+    	userId="root" />
+    <javaModelGenerator targetPackage="com.clps.oas.sm.pojo" 
+    	targetProject="clps.oas/src/main/java" />
+    <sqlMapGenerator targetPackage="com.clps.oas.sm.xml" 
+    	targetProject="clps.oas/src/main/java" />
+    <javaClientGenerator targetPackage="com.clps.oas.sm.dao" 
+    	targetProject="clps.oas/src/main/java" 
+    	type="XMLMAPPER" >
+    	<!-- schema 是否需要後綴 -->
+    	<property name="enableSubPackage" value="false"/>
+    </javaClientGenerator>
+    <table  tableName="employee" domainObjectName="Employee"
+    	enableCountByExample="false" enableUpdateByExample="false"
+    	enableDeleteByExample="false" enableSelectByExample="false"
+    	selectByExampleQueryId="false"
+    >
+      <!-- <columnOverride column="???" property="???" /> -->
+    </table>
+    
+  </context>
+</generatorConfiguration>
